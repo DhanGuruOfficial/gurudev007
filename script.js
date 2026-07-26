@@ -1,20 +1,49 @@
-// Gurudev 007 Website
-console.log("Welcome to Gurudev 007 Official");
-console.log("Gurudev 007 Website Loaded");
-window.addEventListener("scroll",()=>{
+// =========================
+// SMOOTH NAVBAR
+// =========================
 
-const nav=document.querySelector("nav");
+window.addEventListener("scroll", function () {
 
-if(window.scrollY>80){
+const nav = document.querySelector("nav");
 
-nav.style.background="rgba(0,0,0,.95)";
-nav.style.boxShadow="0 10px 30px rgba(0,0,0,.35)";
-
-}else{
-
-nav.style.background="rgba(0,0,0,.80)";
-nav.style.boxShadow="none";
-
+if (window.scrollY > 80) {
+    nav.classList.add("sticky");
+} else {
+    nav.classList.remove("sticky");
 }
+
+});
+
+
+// =========================
+// ACTIVE MENU
+// =========================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+
+const sectionTop = section.offsetTop - 120;
+
+if (pageYOffset >= sectionTop) {
+current = section.getAttribute("id");
+}
+
+});
+
+navLinks.forEach(link => {
+
+link.classList.remove("active");
+
+if (link.getAttribute("href") === "#" + current) {
+link.classList.add("active");
+}
+
+});
 
 });
