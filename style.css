@@ -1,0 +1,100 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#090909;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+}
+
+.logo span{
+color:#00ff99;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.telegram{
+background:#00ff99;
+color:black;
+padding:12px 25px;
+border-radius:40px;
+font-weight:bold;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:70px;
+}
+
+.hero-text p{
+margin:25px 0;
+color:#bdbdbd;
+font-size:18px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.buttons a{
+padding:15px 30px;
+background:#00ff99;
+color:black;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero-card{
+background:#111;
+padding:35px;
+border-radius:25px;
+width:350px;
+}
+
+.card{
+margin-top:20px;
+background:#181818;
+padding:18px;
+border-radius:15px;
+}
