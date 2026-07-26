@@ -828,3 +828,138 @@ transform:translateY(-8px);
 }
 
 }
+/* ===========================
+   PREMIUM FINISH
+=========================== */
+
+html{
+scroll-behavior:smooth;
+}
+
+nav{
+transition:.35s;
+}
+
+nav.sticky{
+
+background:rgba(8,8,8,.96);
+
+box-shadow:0 10px 35px rgba(0,0,0,.45);
+
+backdrop-filter:blur(15px);
+
+}
+
+.menu a{
+
+position:relative;
+
+}
+
+.menu a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#00ff99;
+
+transition:.3s;
+
+}
+
+.menu a:hover::after,
+.menu a.active::after{
+
+width:100%;
+
+}
+
+.menu a.active{
+
+color:#00ff99;
+
+}
+
+section{
+
+animation:fadeSection .8s ease;
+
+}
+
+@keyframes fadeSection{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero{
+
+background:
+radial-gradient(circle at top right,
+rgba(0,255,153,.08),
+transparent 45%),
+
+radial-gradient(circle at bottom left,
+rgba(0,180,255,.08),
+transparent 45%);
+
+}
+
+.course-card:hover,
+.about-card:hover,
+.analysis-card:hover,
+.video-item:hover,
+.review-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 15px 40px rgba(0,255,153,.22);
+
+}
+
+.btn-primary,
+.btn-secondary,
+.watch-btn,
+.telegram-btn{
+
+transition:.3s;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.watch-btn:hover,
+.telegram-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+footer{
+
+margin-top:80px;
+
+}
