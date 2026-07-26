@@ -658,3 +658,53 @@ font-size:24px;
 }
 
 }
+.live-market{
+padding:100px 8%;
+text-align:center;
+background:#111;
+}
+
+.live-market h2{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.live-market p{
+color:#bbb;
+margin-bottom:40px;
+}
+
+.tradingview-widget-container{
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 30px rgba(0,255,153,.15);
+}
+
+.market-news{
+padding:100px 8%;
+background:#0b0b0b;
+}
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.news-card{
+background:#181818;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.news-card:hover{
+transform:translateY(-10px);
+border:1px solid #00ff99;
+}
+
+.news-card h3{
+color:#00ff99;
+margin-bottom:15px;
+}
