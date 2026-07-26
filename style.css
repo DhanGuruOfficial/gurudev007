@@ -304,3 +304,52 @@ color:#d4d4d4;
 font-size:19px;
 line-height:1.7;
 }
+.market-analysis{
+padding:90px 10%;
+background:#080808;
+text-align:center;
+}
+
+.market-analysis h2{
+font-size:48px;
+color:#fff;
+margin-bottom:50px;
+}
+
+.analysis-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.analysis-card{
+background:#151515;
+padding:35px;
+border-radius:18px;
+border:1px solid rgba(0,255,170,.15);
+transition:.3s;
+}
+
+.analysis-card:hover{
+transform:translateY(-10px);
+border-color:#00ff99;
+box-shadow:0 0 25px rgba(0,255,170,.3);
+}
+
+.analysis-card h3{
+font-size:28px;
+color:#00ff99;
+margin-bottom:15px;
+}
+
+.analysis-card p{
+font-size:22px;
+color:#fff;
+margin-bottom:12px;
+font-weight:700;
+}
+
+.analysis-card span{
+color:#cfcfcf;
+font-size:18px;
+}
