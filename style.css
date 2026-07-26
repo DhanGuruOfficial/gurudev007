@@ -467,3 +467,194 @@ transition:.4s ease;
 transform:translateY(-10px);
 
 }
+/* ===========================
+   FLOATING BUTTONS
+=========================== */
+
+.floating-buttons{
+position:fixed;
+right:25px;
+bottom:25px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:9999;
+}
+
+.float-btn{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:28px;
+font-weight:bold;
+color:#fff;
+box-shadow:0 0 20px rgba(0,0,0,.35);
+transition:.3s;
+}
+
+.float-btn:hover{
+transform:scale(1.12);
+}
+
+.telegram-float{
+background:#229ED9;
+}
+
+.whatsapp-float{
+background:#25D366;
+}
+
+/* ===========================
+   HERO GLOW
+=========================== */
+
+.hero h1{
+background:linear-gradient(90deg,#ffffff,#00ff99,#ffffff);
+background-size:200%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:textGlow 5s linear infinite;
+}
+
+@keyframes textGlow{
+
+0%{
+background-position:0%;
+}
+
+100%{
+background-position:200%;
+}
+
+}
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.market-card,
+.course-card,
+.about-card,
+.analysis-card,
+.video-card,
+.review-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   CUSTOM SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+background:#00ff99;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#00cc77;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#050505;
+padding:50px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h2{
+font-size:30px;
+margin-bottom:15px;
+color:#00ff99;
+}
+
+footer p{
+color:#aaa;
+font-size:15px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:140px;
+}
+
+.hero-left,
+.hero-right{
+width:100%;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero-buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.review-grid,
+.course-grid,
+.about-grid,
+.analysis-grid,
+.youtube-grid{
+grid-template-columns:1fr;
+}
+
+.floating-buttons{
+right:15px;
+bottom:15px;
+}
+
+.float-btn{
+width:55px;
+height:55px;
+font-size:24px;
+}
+
+}
