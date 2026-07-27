@@ -963,3 +963,41 @@ footer{
 margin-top:80px;
 
 }
+.price{
+font-size:34px;
+color:#00ff99;
+margin:20px 0;
+font-weight:700;
+}
+
+.buy-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:15px 35px;
+
+background:#25D366;
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+background:#1ebe5d;
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(37,211,102,.35);
+
+}
